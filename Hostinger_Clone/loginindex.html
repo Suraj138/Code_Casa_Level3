@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in</title>
+  <link rel="stylesheet" href="./loginstyle.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+      <a href="./index.html">
+        <img src="./img/logo.svg.png" alt="Logo">
+      </a>
+    </div>
+    <div class="login-box">
+      <p class="login-title">Log in</p>
+      <div class="login-options">
+        <a href="#" class="login-with">
+          <img src="./img/google.svg" alt="Google">
+          <span>Google</span>
+        </a>
+        <a href="#" class="login-with facebook">
+          <img src="./img/fb.svg" alt="Facebook">
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <div class="login-options">
+        <div class="divider-text">or</div>
+        <hr class="login-divider">
+      </div>
+
+      <form action="#">
+        <div class="input-container">
+          <div class="input-box">
+            <input type="email" id="email" class="input email" required />
+            <label for="email" class="input-label">Email</label>
+          </div>
+        </div>
+        <div class="input-container">
+          <div class="input-box">
+            <input type="password" id="password" class="input password" required />
+            <label for="password" class="input-label">Password</label>
+            <i id="togglePassword" class="fa fa-eye-slash" aria-hidden="true"></i>
+          </div>
+        </div>
+        
+        <button class="login-button" type="submit">Log in</button>
+      </form>
+      <a href="#" class="forgot-password">Forgot password?</a>
+      <p class="not-member">
+        Not a member yet? <a href="#" class="choose-plan">Choose a hosting plan</a> and get started now!
+      </p>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
